@@ -17,16 +17,18 @@
     </div>
 <!-- This section is... -->
 <form onsubmit="validatePassword()">
-<p>Enter a password in the field below. You must include:</p> 
+<p>Enter a password in the field below. Password must contain:</p> 
 <ul>
+  <li>between 6 and 12 letters</li>
   <li>at least one uppercase letter (A-Z)</li>
   <li>at least one lowercase letter (a-z)</li>
   <li>at least one digit (1-9)</li>
   <li>one or more of the following symbols: @, & or $</li>
 </ul> 
-<input type="text" name="password" id="password" placeholder="password">
+<input type="text" name="password" id="password" placeholder="password" required>
 <input type="submit" value="Verify">
 </form>
+<div class="output"></div>
 <!-- As with the very first section, this section should generally not be edited. -->
   </div>
 </body>
