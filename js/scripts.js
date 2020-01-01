@@ -25,4 +25,17 @@ $(function() {
       $("#urlOutput").text("URL is valid.");
     }
   });
+  $("#htmlValidation").submit(function(event) {
+    event.preventDefault();
+    var html = document.getElementById("html").value;
+    var htmlREGEX = /<([\w]+).*>(.*?)<\/\1>/;
+    var htmlResult = htmlREGEX.test(html);
+    if (htmlResult === false) {
+      $("#htmlOutput").text(
+        "HTML tag is invalid. Please enter a new HTML tag."
+      );
+    } else {
+      $("#htmlOutput").text("HTML tag is valid.");
+    }
+  });
 });

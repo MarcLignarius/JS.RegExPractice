@@ -27,7 +27,7 @@
           type="text"
           name="password"
           id="password"
-          placeholder="password"
+          placeholder="Password"
           required
         />
         <input type="submit" value="Verify" />
@@ -38,7 +38,7 @@
       <form class="mb-3" id="urlValidation">
         <p>Enter a URL in the field below.</p>
         <ul>
-          <li>URL must start with <em>http</em>, <em>https</em> or <em>ftp</em> followed by <em>://</em></li>
+          <li>URL must start with <code>http</code>, <code>https</code> or <code>ftp</code> followed by <code>://</code></li>
           <li>URL must match a valid domain name</li>
           <li>URL could contain a port specification <em>(http://www.sitepoint.com:80)</em></li>
           <li>Could contain digit, letter, dots, hyphens, forward slashes, multiple times</li>
@@ -54,6 +54,26 @@
         <input type="submit" value="Verify" />
       </form>
       <div id="urlOutput"></div>
+      <hr>
+      <h3 class="mb-3">HTML Tag Validation</h3>
+      <form class="mb-3" id="htmlValidation">
+        <p>Enter a HTML tag in the field below.</p>
+        <ul>
+          <li>The start tag must begin with < followed by one or more characters and end with > </li>
+          <li>The end tag must start with < / followed by one or more characters and end with ></li>
+          <li>We must match the content inside a TAG element</li>
+        </ul>
+        <input
+          onfocus="this.value=''"
+          type="text"
+          name="html"
+          id="html"
+          placeholder="HTML Tag"
+          required
+        />
+        <input type="submit" value="Verify" />
+      </form>
+      <div id="htmlOutput"></div>
       <hr>
     </div>
   </body>
