@@ -1,34 +1,40 @@
 <!-- This section sets up our html code, links to stylesheets and scripts. Editing this section is generally not recommended. -->
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
-<head>
-  <meta charset="utf-8">
-  <link href="css/bootstrap.css" rel="stylesheet" type="text/css">
-  <link href="css/styles.css" rel="stylesheet" type="text/css">
-  <script src="js/jquery-3.3.1.js"></script>
-  <script src="js/scripts.js"></script>
-  <title>RegEx Practice</title>
-</head>
-<body>
-<!-- This section is the header of the site. -->
-  <div class="container">
-    <div class="jumbotron">
-      <h1>RegEx Practice</h1>
+  <head>
+    <meta charset="utf-8" />
+    <link href="css/bootstrap.css" rel="stylesheet" type="text/css" />
+    <link href="css/styles.css" rel="stylesheet" type="text/css" />
+    <script src="js/jquery-3.3.1.js"></script>
+    <script src="js/scripts.js"></script>
+    <title>RegEx Practice</title>
+  </head>
+  <body>
+    <!-- This section is the header of the site. -->
+    <div class="container">
+      <div class="jumbotron">
+        <h1>RegEx Practice</h1>
+      </div>
+      <!-- This section is... -->
+      <form id="passwordValidation">
+        <p>Enter a password in the field below. Password must contain:</p>
+        <ul>
+          <li>6 to 12 characters in length</li>
+          <li>Must have at least one upper case letter (A-Z)</li>
+          <li>Must have at least one lower case letter (a-z)</li>
+          <li>Must have at least one digit (1-9)</li>
+        </ul>
+        <input
+          type="text"
+          name="password"
+          id="password"
+          placeholder="password"
+          required
+        />
+        <input type="submit" value="Verify" />
+      </form>
+      <div id="passwordOutput"></div>
+      <!-- As with the very first section, this section should generally not be edited. -->
     </div>
-<!-- This section is... -->
-<form onsubmit="validatePassword()">
-<p>Enter a password in the field below. Password must contain:</p> 
-<ul>
-  <li>6 to 12 characters in length</li>
-  <li>Must have at least one upper case letter (A-Z)</li>
-  <li>Must have at least one lower case letter (a-z)</li>
-  <li>Must have at least one digit (1-9)</li>
-</ul> 
-<input type="text" name="password" id="password" placeholder="password" required>
-<input type="submit" value="Verify">
-</form>
-<div id="output"></div>
-<!-- As with the very first section, this section should generally not be edited. -->
-  </div>
-</body>
+  </body>
 </html>
