@@ -18,9 +18,7 @@ $(function() {
     var urlREGEX = /^(http|https|ftp):[\/]{2}([a-zA-Z0-9\-\.]+\.[a-zA-Z]{2,4})(:[0-9]+)?\/?([a-zA-Z0-9\-\._\?\,\'\/\\\+&amp;%\$#\=~]*)/;
     var urlResult = urlREGEX.test(url);
     if (urlResult === false) {
-      $("#urlOutput").text(
-        "URL is invalid. Please enter a new URL."
-      );
+      $("#urlOutput").text("URL is invalid. Please enter a new URL.");
     } else {
       $("#urlOutput").text("URL is valid.");
     }
@@ -36,6 +34,19 @@ $(function() {
       );
     } else {
       $("#htmlOutput").text("HTML tag is valid.");
+    }
+  });
+  $("#duplicateValidation").submit(function(event) {
+    event.preventDefault();
+    var duplicate = document.getElementById("duplicate").value;
+    var duplicateREGEX = /\b(\w+)\b(?=.*\1)/;
+    var duplicateResult = duplicateREGEX.test(duplicate);
+    if (duplicateResult === false) {
+      $("#duplicateOutput").text(
+        "No word is duplicated in this sentence, or the duplicates are not space separated. Please enter another sentence."
+      );
+    } else {
+      $("#duplicateOutput").text("One or more words have duplicates in this sentence.");
     }
   });
 });
