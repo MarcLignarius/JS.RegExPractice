@@ -1,28 +1,36 @@
-# _{Application Name}_
+# _RegEx Practice_
 
-#### _{Brief description of application}, {Date of current version}_
+#### _Teaching myself how to use regular expressions._
 
 #### By _**Marc Davies**_
 
 ## Description
 
-_{This is a detailed description of your application. Its purpose and usage.  Give as much detail as needed to explain what the application does, and any other information you want users or other developers to have. }_
+_This application consists of various practice exercises using regular expressions to validate:_
+
+* _Passwords_
+* _URLs_
+* _HTML tags_
+* _Duplicates_
 
 ## Setup/Installation Requirements
 
 * _Clone from GitHub_
 * _Open index.html_
-* _Alternatively, launch marclignarius.github.io/projectname_
+* _Alternatively, launch marclignarius.github.io/regexpractice_
 
 ## Specs
 
 | Behavior | Input | Output |
 | ------------- |:-------------:| -----:|
-| Lorem | x | true/false |
-| Lorem | x | true/false |
-| Lorem | x | true/false |
-| Lorem | x | true/false |
-| Lorem | x | true/false |
+| User enters a password which does not meet all given instructions | abcdef | Password is invalid. Please enter a new password. |
+| User enters a password which meets all given instructions | @bcd3F | Password is valid. |
+| User enters a URL which does not meet all given instructions | https://<span></span>github | URL is invalid. Please enter a new URL. |
+| User enters a URL which meets all given instructions | https://<span></span>github<span></span>.com | URL is valid. |
+| User enters a HTML tag which does not meet all given instructions | <code>< ul ></code> and <code>< ul ></code> (without spaces) | HTML tag is invalid. Please enter a new HTML tag. |
+| User enters a HTML tag which meets all given instructions | <code>< ul ></code> and <code>< /ul ></code> (without spaces) | HTML tag is valid. |
+| User enters a sentence which does not meet all given instructions | hellohello | No word is duplicated in this sentence, or the duplicates are not space separated. Please enter another sentence. |
+| User enters a sentence which meets all given instructions | hello hello | One or more words have duplicates in this sentence. |
 
 ## Known Bugs
 
@@ -30,14 +38,14 @@ _None as of last update_
 
 ## Support and contact details
 
-_Please contact me at marcdaviesriot@gmail.com if you run into any issues or have questions, ideas or feedback._
+_Please contact me via <a href="https://www.linkedin.com/in/marcdaviesriot/">LinkedIn</a> if you run into any issues or have questions, ideas or feedback._
 
 ## Technologies Used
 
-_HTML, CSS, JS, Bootstrap, jQuery, Atom._
+_HTML, CSS, JS, Bootstrap, jQuery_
 
 ### License
 
 *This software is licensed under the GPL license.*
 
-Copyright (c) 2019 **_Marc Davies_**
+Copyright (c) 2019-2020 **_Marc Davies_**
