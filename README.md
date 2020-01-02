@@ -1,3 +1,4 @@
+ 
 # _RegEx Practice_
 
 #### _Teaching myself how to use regular expressions._
@@ -5,19 +6,19 @@
 #### By _**Marc Davies**_
 
 ## Description
-
+ 
 _This application consists of various practice exercises using regular expressions to validate:_
-
-* _Passwords_
-* _URLs_
-* _HTML tags_
+ 
+* _Passwords_ 
+* _URLs_ 
+* _HTML tags_ 
 * _Duplicates_
 
 ## Setup/Installation Requirements
 
 * _Clone from GitHub_
 * _Open index.html_
-* _Alternatively, launch marclignarius.github.io/regexpractice_
+* _Alternatively, click <a href="https://marclignarius.github.io/JS.RegExPractice/">HERE</a> to visit the GitHub Pages version of the application_
 
 ## Specs
 
