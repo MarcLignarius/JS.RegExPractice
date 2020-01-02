@@ -28,11 +28,11 @@ $(function() {
   $("#htmlValidation").submit(function(event) {
     event.preventDefault();
     var html = document.getElementById("html").value;
-    var htmlREGEX = /<([\w]+).*>(.*?)<\/\1>/;
+    var htmlREGEX = /<\b(ul|ol|li)\b><\/\1>/;
     var htmlResult = htmlREGEX.test(html);
     if (htmlResult === false) {
       $("#htmlOutput").text(
-        "HTML tag is invalid. Please enter a new HTML tag."
+        "HTML tag is invalid or was not coded into the regular expression. Coded tags include ul, ol and li."
       );
     } else {
       $("#htmlOutput").text("HTML tag is valid.");
