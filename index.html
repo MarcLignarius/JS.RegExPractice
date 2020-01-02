@@ -36,7 +36,7 @@
       <hr>
       <h3 class="mb-3">URL Validation</h3>
       <form class="mb-3" id="urlValidation">
-        <p>Enter a URL in the field below.</p>
+        <p>Enter a URL in the field below:</p>
         <ul>
           <li>URL must start with <code>http</code>, <code>https</code> or <code>ftp</code> followed by <code>://</code></li>
           <li>URL must match a valid domain name</li>
@@ -57,7 +57,7 @@
       <hr>
       <h3 class="mb-3">HTML Tag Validation</h3>
       <form class="mb-3" id="htmlValidation">
-        <p>Enter a HTML tag in the field below.</p>
+        <p>Enter a HTML tag in the field below:</p>
         <ul>
           <li>The start tag must begin with < followed by one or more characters and end with > </li>
           <li>The end tag must start with < / (no space) followed by one or more characters and end with ></li>
@@ -75,6 +75,28 @@
       </form>
       <div id="htmlOutput"></div>
       <hr>
+    </form>
+    <div id="passwordOutput"></div>
+    <hr>
+    <h3 class="mb-3">Duplicate Words Validation</h3>
+    <form class="mb-3" id="duplicateValidation">
+      <p>Enter a sentence in the field below with a duplicate word:</p>
+      <ul>
+        <li>The words must be space separated, <code>hello hello</code> will return a positive, but not <code>hellohello</code>.</li>
+        <li>Non-consecutive duplicates must return a positive, <code>hello hello</code> and <code>"Hello", said Ada. "Hello", replied Maya.</code> should both return positives.</li>
+      </ul>
+      <input
+        onfocus="this.value=''"
+        type="text"
+        name="duplicate"
+        id="duplicate"
+        placeholder="Sentence"
+        required
+      />
+      <input type="submit" value="Verify" />
+    </form>
+    <div id="duplicateOutput"></div>
+    <hr>
     </div>
   </body>
 </html>
