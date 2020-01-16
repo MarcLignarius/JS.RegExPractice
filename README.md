@@ -18,7 +18,7 @@ _This application consists of various practice exercises using regular expressio
 
 * _Clone from GitHub_
 * _Open index.html_
-* _Alternatively, click <a href="https://marclignarius.github.io/JS.RegExPractice/">HERE</a> to visit the GitHub Pages site_
+* _Alternatively, launch https://marclignarius.github.io/JS.RegExPractice/_
 
 ## Specs
 
