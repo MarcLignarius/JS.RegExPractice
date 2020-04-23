@@ -29,7 +29,7 @@ _This application consists of various practice exercises using regular expressio
 | User enters a URL which does not meet all given instructions | https://<span></span>github | URL is invalid. Please enter a new URL. |
 | User enters a URL which meets all given instructions | https://<span></span>github<span></span>.com | URL is valid. |
 | User enters a HTML tag which does not meet all given instructions | <code>&lt;ul&gt;</code> and <code>&lt;ul&gt;</code> | HTML tag is invalid or was not coded into the regular expression. Coded tags include ul, ol and li. |
-| User enters a HTML tag which meets all given instructions | <code>&lt;ul&gt;</code> and <code>&lt;/ul&gt;</code> (without spaces) | HTML tag is valid. |
+| User enters a HTML tag which meets all given instructions | <code>&lt;ul&gt;</code> and <code>&lt;/ul&gt;</code> | HTML tag is valid. |
 | User enters a sentence which does not meet all given instructions | hellohello | No word is duplicated in this sentence, or the duplicates are not space separated. Please enter another sentence. |
 | User enters a sentence which meets all given instructions | hello hello | One or more words have duplicates in this sentence. |
 
